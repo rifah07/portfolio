@@ -1,1 +1,1 @@
-This is a personal portfolio project using MERN stack
+This is a personal portfolio project using simple stack
