@@ -2,62 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <mata name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Protfolio by Rifah</title>
-      <link rel="stylesheet" href="style.css" />
-      <link rel="stylesheet" href="responsive_style.css" />
-    </mata>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
+      <h1 class="styled-name">Rifah Sajida DEya</h1>
       <nav>
-        <div class="logo">
-          <h2 class="logo-heading">Rifah Sajida Deya</h2>
-        </div>
-        <div class="hamburger"></div>
-        <div class="menu">
-          <ul class="list-menu">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#services">Services</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#recommendations">Recommendations</a></li>
+        </ul>
       </nav>
     </header>
-    <div class="home" id="home">
-      <div class="intro">
-        <div class="home-headings">
-          <h1 class="home1">Welcome to My Portfolio</h1>
-          <h2 class="home2">I'm Rifah Sajida Deya</h2>
-          <h4 class="home3">A student of Computer Science and Engineering</h4>
-        </div>
-        <div class="home_buttons">
-          <button> Hire me</button>
-          <button> Download CV</button>
+
+    <section id="about">
+      <img src="profile.jpeg" alt="Profile Picture" class="profile-img" />
+      <h2>Your Name</h2>
+      <p>A short bio about yourself.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill"><img src="html-logo.png" alt="HTML" /> HTML</div>
+        <div class="skill"><img src="css-logo.png" alt="CSS" /> CSS</div>
+        <div class="skill">
+          <img src="js-logo.png" alt="JavaScript" /> JavaScript
         </div>
       </div>
-      <div class="about" id="about">
-        <div class="text-about">
-          <div class="all-abouts">
-            <h1 class="about1">About Me</h1>
-            <p class="about2">I'm Rifah Sajida Deya, a final year student of CSE in Jagannath University, Dhaka</p>
-          </div>
-        </div>
-    <footer></footer>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">Project 1 - Description</div>
+      <div class="project">Project 2 - Description</div>
+      <div class="project">Project 3 - Description</div>
+    </section>
+
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <ul id="recommendation-list">
+        <li>Great work on the project!</li>
+      </ul>
+      <input
+        type="text"
+        id="new-recommendation"
+        placeholder="Add a recommendation"
+      />
+      <button onclick="addRecommendation()">Submit</button>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
