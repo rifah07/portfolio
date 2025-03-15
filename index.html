@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <header id="home">
       <h1 class="styled-name">Rifah Sajida Deya</h1>
       <nav>
         <ul>
+          <li class="home-item"><a href="#home"><img src="home-icon.jpg" alt="Home" class="home-icon"></a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -124,9 +125,28 @@
 
     <section id="recommendations">
       <h2>Recommendations</h2>
-      <ul id="recommendation-list">
-        <li>Great work on the project!</li>
-      </ul>
+      <div id="recommendation-list" class="recommendation-container">
+        <div class="recommendation-card">
+          <p>
+            "Rifah is an excellent developer with a great problem-solving
+            mindset!"
+          </p>
+          <h4>- Alex</h4>
+        </div>
+        <div class="recommendation-card">
+          <p>
+            "Her dedication to backend development and cloud computing is
+            impressive."
+          </p>
+          <h4>- Sarah</h4>
+        </div>
+        <div class="recommendation-card">
+          <p>
+            "She always delivers high-quality work and is great to work with!"
+          </p>
+          <h4>- Michael</h4>
+        </div>
+      </div>
       <input
         type="text"
         id="new-recommendation"
@@ -134,6 +154,10 @@
       />
       <button onclick="addRecommendation()">Submit</button>
     </section>
+
+    <footer>
+      <p>&copy; 2025 Rifah Sajida Deya</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
