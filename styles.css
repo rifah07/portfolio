@@ -43,7 +43,7 @@ nav ul li a {
 
 .home-icon {
     position: fixed;
-    top: 26px;
+    bottom: 26px;
     right: 20px;
     font-size: 24px;
     color: white;
